@@ -2,5 +2,5 @@
 a = 97
 while (a <= 122):
     if ((chr(a) != 'q') and (chr(a) != 'e')):
-        print(f'{chr(a)}')
+        print("{:c}".format(a))
     a = a+1
