@@ -8,6 +8,6 @@ if __name__ == '__main__':
     else:
         if len(sys.argv) == 2:
             str = str2
-        print('{} {}:'.format(len(sys.argv) - 1,str))
+        print('{} {}:'.format(len(sys.argv) - 1, str))
         for i in range(1, len(sys.argv)):
             print('{}: {}'.format(i, sys.argv[i]))
