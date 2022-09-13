@@ -4,10 +4,11 @@ def new_in_list(my_list, idx, element):
         return my_list
     else:
         new_list=[]
-        for x in range(len(my_list)-1):
-            if (x == idx):
-                new_list[idx] = element
-            else:
-                new_list[x] = my_list[x]
+        for x in my_list:
+            new_list.append(x) 
+        new_list[idx] = element    
     return new_list
+
+
+
    
