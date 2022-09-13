@@ -6,7 +6,10 @@ def new_in_list(my_list, idx, element):
         new_list = []
         index = 0
         for x in my_list:
-            if idx == index:
+            if len(my_list) - 1 > index:
+                break
+            
+            elif idx == index:
                 new_list[idx] = element
             else:
                 new_list[index] = x
