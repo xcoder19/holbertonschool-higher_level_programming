@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def uniq_add(my_list=[]):
     added_int = []
     Result = 0
@@ -8,7 +7,7 @@ def uniq_add(my_list=[]):
         for x in added_int:
             if i == x:
                 exists = True
-        if exists == False:
+        if exists is False:
             added_int.append(i)
             Result = Result + i
     return Result
