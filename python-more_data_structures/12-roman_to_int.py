@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from distutils.core import run_setup
 
 
 def roman_to_int(roman_string):
