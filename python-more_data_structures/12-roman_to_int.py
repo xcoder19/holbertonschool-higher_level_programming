@@ -32,4 +32,4 @@ def roman_to_int(roman_string):
     if (len(roman_string) >= 2 and roman_string[0] == 'I' and roman_string[1] == 'V'):
         print('hello3')
         result = result - 2
-    print(result)
+    return(result)
