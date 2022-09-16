@@ -21,15 +21,15 @@ def roman_to_int(roman_string):
 
     if (len(roman_string) >= 2):
         if (roman_string != "III" and roman_string != "II" and roman_string[0] == 'I' and roman_string[1] != 'X' and roman_string[1] != 'V'):
-            print('hello')
+            
             result = result - 1
 
     if (len(roman_string) >= 2 and roman_string[0] == 'I' and roman_string[1] == 'X'):
-        print('hello2')
+        
         result = result - 2
 
    
     if (len(roman_string) >= 2 and roman_string[0] == 'I' and roman_string[1] == 'V'):
-        print('hello3')
+        
         result = result - 2
     return(result)
