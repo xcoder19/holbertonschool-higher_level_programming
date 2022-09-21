@@ -29,5 +29,3 @@ class Square:
             for i in range(self.__size):
                 print("#", end="")
             print('')
-obj = Square(4)
-obj.my_print()
