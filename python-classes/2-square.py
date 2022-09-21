@@ -4,7 +4,7 @@
 
 class Square:
     """class square"""
-    def __init__(self, size):
+    def __init__(self, size=0):
         if size < 0:
             raise TypeError("size must be >= 0")
         if  isinstance(size,int) == False:
