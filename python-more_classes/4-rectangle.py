@@ -7,10 +7,10 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
-    
+
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
-    
+
     def __str__(self):
         arr = ''
         if (self.__width == 0 or self.__height == 0):
