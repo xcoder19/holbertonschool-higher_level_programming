@@ -5,7 +5,7 @@
 class Rectangle:
     """"Rectangle class"""
     number_of_instances = 0
-    
+
     def __init__(self, width=0, height=0):
         Rectangle.number_of_instances = Rectangle.number_of_instances + 1
         self.height = height
@@ -14,7 +14,7 @@ class Rectangle:
     def __del__(self):
         Rectangle.number_of_instances = Rectangle.number_of_instances - 1
         print("Bye rectangle...")
-        
+  
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
 
