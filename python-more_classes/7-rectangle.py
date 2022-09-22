@@ -5,7 +5,7 @@
 class Rectangle:
     """"Rectangle class"""
     number_of_instances = 0
-
+    print_symbol = '#'
     def __init__(self, width=0, height=0):
         Rectangle.number_of_instances = Rectangle.number_of_instances + 1
         self.height = height
@@ -24,7 +24,7 @@ class Rectangle:
             return arr
         for x in range(self.__height):
             for i in range(self.__width):
-                arr = arr + '#'
+                arr = arr + self.print_symbol
             arr = arr + '\n'
         return arr[:len(arr) - 1]
 
