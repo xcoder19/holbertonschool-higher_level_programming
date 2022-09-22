@@ -24,7 +24,7 @@ class Rectangle:
             return arr
         for x in range(self.__height):
             for i in range(self.__width):
-                arr = arr + self.print_symbol
+                arr = arr + str(self.print_symbol)
             arr = arr + '\n'
         return arr[:len(arr) - 1]
 
