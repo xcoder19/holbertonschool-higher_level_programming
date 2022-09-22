@@ -62,8 +62,8 @@ class Rectangle:
         return (self.__height + self.__width) * 2
 
     def square(cls, size=0):
-        width = height = size
-        return cls(width, height)
+        
+        return cls(width=size, height=size)
     
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
