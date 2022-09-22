@@ -10,7 +10,7 @@ class Rectangle:
 
     def __str__(self):
         arr = ''
-        if (self.width == 0 or self.height == 0):
+        if (self.__width == 0 or self.__height == 0):
             return arr
         for x in range(self.__height):
             for i in range(self.__width):
