@@ -1,6 +1,6 @@
   >>> MyList = __import__('1-my_list').MyList
 
-check list with unsigned int
+check list with unsigned int:
 
     >>> my_list = MyList()
 	>>> my_list.append(0)
