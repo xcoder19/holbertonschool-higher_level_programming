@@ -3,6 +3,9 @@
 import json
 def save_to_json_file(my_obj, filename):
     """save_to_json_file"""
-    text = json.dumps(my_obj)
+    if not isinstance(my_obj,set):
+        text = json.dumps(my_obj)
+    else:
+        text = ""
     with open(filename, 'w') as file:
         file.write(text)
