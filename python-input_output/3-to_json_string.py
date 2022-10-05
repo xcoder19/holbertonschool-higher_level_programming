@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-from json import JSONEncoder
+""" to_json_string obj"""
+import json
 
 
 def to_json_string(my_obj):
-    return JSONEncoder.encode(my_obj)
+    """ to_json_string obj"""
+
+
+    return json(my_obj)
