@@ -6,5 +6,5 @@
 def write_file(filename="", text=""):
     """ write file func"""
 
-    with open(filename, 'w') as file:
+    with open(filename, 'a') as file:
         file.write(text)
