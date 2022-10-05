@@ -5,5 +5,5 @@
 def read_file(filename=""):
     """ read file func"""
 
-    with open(filename, 'r') as file:
+    with open(filename) as file:
         print(file)
