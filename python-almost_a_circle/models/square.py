@@ -24,3 +24,17 @@ class Square(Rectangle):
 
     def __str__(self):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}"
+
+
+    def update(self, *args, **kwargs):
+        """update function"""
+        i = 0
+        att = ["id", "width", "height", "x", "y"]
+        if (args):
+            for x in args:
+                if (i < len(att)):
+                    setattr(self, att[i], x)
+                    i += 1
+        else:
+            for x in kwargs:
+                setattr(self, x, kwargs[x])
