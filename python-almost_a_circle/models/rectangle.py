@@ -95,7 +95,7 @@ class Rectangle(Base):
         else:
             for x in kwargs:
                 setattr(self, x, kwargs[x])
-     
+
     def to_dictionary(self):
         """ to_dictionary func"""
 
