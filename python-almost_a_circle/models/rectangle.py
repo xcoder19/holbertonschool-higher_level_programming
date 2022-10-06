@@ -97,5 +97,7 @@ class Rectangle(Base):
                 setattr(self, x, kwargs[x])
                 
     def to_dictionary(self):
+        """ to_dictionary func"""
+        
         return {'id':self.id, 'width':self.width,
                 'height':self.height, 'x':self.x, 'y':self.y}
