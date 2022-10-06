@@ -83,11 +83,16 @@ class Rectangle(Base):
         return(
             f"[Rectangle] ({m.id}) {m.x}/{m.y} - {m.width}/{m.height}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update function"""
         i = 0
         att = ["id", "width", "height", "x", "y"]
-        for x in args:
-            if (i < len(att)):
-                setattr(self, att[i], x)
+        if (args):
+            for x in args:
+                if (i < len(att)):
+                    setattr(self, att[i], x)
+                    i += 1
+        else:
+            for x in kwargs:
+                setattr(self, x, x[i])
                 i += 1
