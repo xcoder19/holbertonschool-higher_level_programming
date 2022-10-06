@@ -89,5 +89,5 @@ class Rectangle(Base):
         att = ["id", "width", "height", "x", "y"]
         for x in args:
             if (i < len(att)):
-                setattr(self, att[i], args)
+                setattr(self, att[i], x)
                 i += 1
