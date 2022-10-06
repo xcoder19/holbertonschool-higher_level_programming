@@ -69,4 +69,4 @@ class Rectangle(Base):
         """display function"""
         for x in range(self.height):
             for i in range(self.width):
-                print('#')
+                print('#',end="")
