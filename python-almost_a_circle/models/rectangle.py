@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ class Rectangle"""
-from tracemalloc import start
 from models.base import Base
 
 
@@ -68,8 +67,9 @@ class Rectangle(Base):
 
     def display(self):
         """display function"""
+        
         if(self.__y > 0):
-                print()
+                print(' ')
         for x in range(self.height):
             if (self.__x > 0):
                 print(" ",end="")
