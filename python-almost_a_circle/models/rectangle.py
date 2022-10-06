@@ -70,7 +70,7 @@ class Rectangle(Base):
         """display function"""
         for x in range(self.height):
             if (x > 0):
-                print(" ",start="")
+                print(end=" ")
             for i in range(self.width):
                 print('#', end="")
             print()
