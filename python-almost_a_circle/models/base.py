@@ -29,13 +29,11 @@ class Base:
     def save_to_file(cls, list_objs):
         
         """save_to_file"""
-        if list_objs is None:
-            open(f"Rectangle.json",'w')
-            return
+        
         list = []
         with open(f"{cls.__name__}.json", 'w') as file:
             if list_objs is None:
-                json.dumps(list, file)
+                return json.dumps(list, file)
             else:
                 for x in list_objs:
                     list.append(x.to_dictionary())
