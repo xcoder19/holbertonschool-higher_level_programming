@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""add item func"""
 import json
 import sys
 
