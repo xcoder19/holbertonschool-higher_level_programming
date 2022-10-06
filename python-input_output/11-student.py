@@ -21,6 +21,7 @@ class Student:
                 if hasattr(self, x):
                     dict[x] = getattr(self, x)
             return dict
+
     def reload_from_json(self, json):
         for x in json:
             setattr(self, x, json[x])
