@@ -30,7 +30,7 @@ class Base:
         
         """save_to_file"""
         if list_objs is None:
-            open(f"{cls.__name__}.json",'w')
+            open(f"Rectangle.json",'w')
             return
         list = []
         with open(f"{cls.__name__}.json", 'w') as file:
