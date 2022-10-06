@@ -49,6 +49,6 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """"create function"""
-        obj = cls(0)
+        obj = cls(1)
         obj.update(**dictionary)
         return (obj)
