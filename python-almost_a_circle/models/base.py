@@ -65,7 +65,7 @@ class Base:
             with open(f"{cls.__name__}.json", "r") as file:
                 list = cls.from_json_string(file.read())
                 for x in list:
-                   listi.append(cls.create(x))
+                    listi.append(cls.create(x))
                 return listi
         except FileNotFoundError:
             return []
