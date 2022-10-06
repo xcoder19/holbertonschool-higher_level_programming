@@ -29,7 +29,7 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """update function"""
         i = 0
-        att = ["id", "width", "height", "x", "y"]
+        att = ["id", "size", "x", "y"]
         if (args):
             for x in args:
                 if (i < len(att)):
