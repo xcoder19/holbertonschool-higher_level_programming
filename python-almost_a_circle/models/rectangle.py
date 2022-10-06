@@ -94,5 +94,5 @@ class Rectangle(Base):
                     i += 1
         else:
             for x in kwargs:
-                setattr(self, x, x)
+                setattr(self, x, kwargs[x])
                 i += 1
