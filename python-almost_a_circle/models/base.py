@@ -49,6 +49,10 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """"create function"""
-        obj = cls(1,2,1,1)
+        
+        if cls.__name__ == 'Rectangle':
+            obj = cls(1,2)
+        else:
+            obj = cls(2)
         obj.update(**dictionary)
         return (obj)
