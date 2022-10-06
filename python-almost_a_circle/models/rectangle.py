@@ -68,6 +68,8 @@ class Rectangle(Base):
     def display(self):
         """display function"""
         for x in range(self.height):
+            if (x > 0):
+                print(" ",end="")
             for i in range(self.width):
                 print('#', end="")
             print()
