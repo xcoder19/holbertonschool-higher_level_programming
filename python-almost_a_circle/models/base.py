@@ -29,7 +29,7 @@ class Base:
     def save_to_file(cls, list_objs):
         
         """save_to_file"""
-        if cls is None:
+        if cls or list_objs is None:
             return
         list = []
         with open(f"{cls.__name__}.json", 'w') as file:
