@@ -10,4 +10,4 @@ try:
 except FileNotFoundError:
     pass
 
-save_to_json_file(str(sys.argv[1:]),"add_item.json")
+save_to_json_file(sys.argv[1:],"add_item.json")
