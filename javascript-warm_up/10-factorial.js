@@ -4,11 +4,11 @@ const intarg = parseInt(myArgs[0]);
 if (intarg) {
   console.log(fact(intarg));
 } else {
-  console.log(NaN);
+  console.log(1);
 }
 
 function fact (n) {
-  if (n === 0 || n === NaN) return 1;
+  if (n === 0 || isNaN(n)) return 1;
   else {
     return n * fact(n - 1);
   }
