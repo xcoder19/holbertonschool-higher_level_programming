@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/node
 const myArgs = process.argv.slice(2);
 if (myArgs.length == 0) {
 console.log('No argument');
