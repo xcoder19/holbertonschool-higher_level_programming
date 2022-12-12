@@ -17,8 +17,9 @@ request(myArgs[0], function (error, response, body) {
           count++;
         }
       });
-      obj[id] = count;
+      if (count > 0) { obj[id] = count; }
     }
+
     console.log(obj);
   } else {
     console.log(404);
