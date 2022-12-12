@@ -1,10 +1,18 @@
 #!/usr/bin/node
+
 const request = require('request');
-const myArgs = process.argv.slice(2);
-const url = `https://swapi-api.hbtn.io/api/films/${myArgs[0]}`;
+const url = 'https://swapi-api.hbtn.io/api/films/';
 request(url, function (error, response, body) {
   if (!error) {
-    console.log(JSON.parse(response.body).title);
+    let count = 0;
+    JSON.parse(response.body).results.forEach(element => {
+      element.characters.forEach((char) => {
+        if (char.includes('18')) {
+          count++;
+        }
+      });
+    });
+    console.log(count);
   } else {
     console.log(404);
   }
